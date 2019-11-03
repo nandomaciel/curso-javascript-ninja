@@ -80,11 +80,14 @@ function newFunction(a, b, c) {
     return (a + b) / c;
   } else if(a === undefined && b === undefined && c === undefined){
     return false;
-  } else{
+  } else {
     return null;
   }
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+newFunction(); //false
+newFunction(1); // 1
+newFunction(1, 2); // 3
+newFunction(1, 2, 3); // 1
 ```
