@@ -1,7 +1,8 @@
 # Desafio da semana #3
 
 ```js
-/ Declarar uma variável qualquer, que receba um objeto vazio.
+
+// Declarar uma variável qualquer, que receba um objeto vazio.
 var myObj = {}
 
 /*
@@ -151,7 +152,7 @@ pessoa.andando // false
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-pessoa.caminhouQuantosMetros(); // 15
+pessoa.caminhouQuantosMetros // 15
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
@@ -171,25 +172,25 @@ método), que será concatenada com a frase de retorno, mostrando a resposta
 correta, de acordo com os dados inseridos no objeto.
 */
 pessoa.apresentacao = function(){
-    var sexo = 'o';
-    if(pessoa.sexo === "Feminino") {
+    var sexo = "o";
+    var idade = "ano";    
+    var metros = "metros";
+    
+    if(pessoa.sexo === 'Feminino') {
         sexo = "a";
     }
 
-    var idade = 'anos;
     if(idade === 1) {
         idade = "ano";
     }
-
-    var caminhou = 'metros';
+    
     if(pessoa.caminhouQuantosMetros === 1) {
-        caminhou = "metro";
+        metros = "metro";
     }
 
-    return "Olá, eu sou " + sexo + " " + pessoa.nome + " " + pessoa.sobrenome +", tenho " + pessoa.idade +  " " + idade + ", " + pessoa.altura + ", "+ " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " " + caminhou + "!";
+    return "Olá, eu sou " + sexo + " " + pessoa.nome + " " + pessoa.sobrenome +", tenho " + pessoa.idade +  " " + idade + ", " +   pessoa.altura + "m, "+ " meu peso é " + pessoa.peso + " e, só hoje, eu já caminhei " + pessoa.caminhouQuantosMetros + " " + metros;
 };
 
 // Agora, apresente-se ;)
-pessoa.aprensetacao();
-
+pessoa.apresentacao();
 ```
